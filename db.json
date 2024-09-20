@@ -1,0 +1,81 @@
+{
+  "employees": [
+    {
+      "name": "Alisha Patel",
+      "profile": "../assets/profile3.png",
+      "gender": "female",
+      "department": [
+        "HR",
+        "Others"
+      ],
+      "salary": "400000",
+      "startdate": {
+        "day": "11",
+        "month": "July",
+        "year": "2021"
+      },
+      "notes": "hi",
+      "id": "3b1c"
+    },
+    {
+      "id": "0d7e",
+      "name": "Surabhi Shahapure",
+      "profile": "../assets/profile1.png",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "salary": "1000000",
+      "startdate": {
+        "day": "20",
+        "month": "Jan",
+        "year": "2020"
+      },
+      "notes": "hello"
+    },
+    {
+      "id": "60ea",
+      "name": "Rishi Sangle",
+      "profile": "../assets/profile1.png",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "salary": "5000000",
+      "startdate": {
+        "day": "18",
+        "month": "Oct",
+        "year": "2022"
+      },
+      "notes": "rishi"
+    },
+    {
+      "id": "0f54",
+      "name": "Thomas Bansod",
+      "profile": "../assets/profile1.png",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "salary": "3000000",
+      "startdate": {
+        "day": "18",
+        "month": "July",
+        "year": "2021"
+      },
+      "notes": "thomas"
+    }
+  ]
+}
