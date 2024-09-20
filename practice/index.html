@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: lightgreen; /* Background color when active class is added */
+            color: white;                 /* Text color change */
+            font-weight: bold;            /* Make text bold */
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv1">
+        <h1>this is jQuery</h1>
+        <h1>this is jQuery</h1>
+        <h1>this is jQuery</h1>
+        <h1>this is jQuery</h1>
+    </div>
+
+    <div class="myclass">
+        <h1>hello</h1>
+    </div>
+
+    <p>hiii</p>
+
+    <p id="myParagraph">Hello, this is a paragraph.</p>
+
+    <input type="text" id="myinput" value="hello world">
+<button id="clickme">Click Me</button>
+
+<div id="myDiv">Click the button to toggle the "active" class on this div</div>
+    <button id="toggleBtn">Toggle Active Class</button>
+
+    <textarea id="mypara" rows="4" cols="50">Type something here...</textarea>
+
+    <button id="myForm">submit</button>
+    <p id="myDiv">kite</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+
+    //Element Selectors
+    // 1.id selector
+    // $("#mydiv").hide();   
+
+    // 2. class selector
+    // $(".myclass").css("background-color","red")
+
+    // 3.tag name
+    // $("p").css("font-weight", "bold");
+
+    // text and HTML Manipulation
+    let text = $("#myParagraph").text();   //get the text content of element
+    console.log(text)
+    $("#myParagraph").text("This is new text.");   //set the new text content 
+
+    // for input we use val
+    $("#clickme").click(function(){
+    let text1 = $("#myinput").val(); 
+    console.log(text1);
+});
+
+/*
+    $("#mydiv").click(function(){
+        $(this).hide()
+    })*/
+
+$("#myParagraph").addClass("highlight")
+
+$(".highlight").css("background-color","pink")
+// toggleclass
+$("#toggleBtn").click(function(){
+            $("#myDiv").toggleClass("active");
+        });
+
+
+        // on event
+        $("clickme").on("click",function(){
+            console.log("clicked!!!!!")
+        })
+
+//hover()
+$("#mydiv1").hover(function() {
+            $(this).css("background-color", "purple");
+        }, function() {
+            $(this).css("background-color", "lightgray");
+        });
+
+        // Show alert when a key is pressed in an input field
+        $("#mypara").keydown(function(event) {
+            alert("Key pressed: " + event.key);
+        });
+
+        // Prevent form submission and show an alert
+$("#myForm").submit(function(event) {
+  event.preventDefault();
+  alert("Form submitted!");
+});
+
+// attr: get or set the attribute value
+// find () : find descendants of an element
+$("#myDiv").find("span").css("color", "red");
+
+
+</script>
+</html>
