@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Payroll Home</title>
+    <link rel="stylesheet" href="../css/EmpPayrollDashboard.css">
+</head>
+
+<body>
+
+    <header class="header-content header" id="headerID">
+        <div class="logo-content">
+            <img src="../assets/logo.png" alt="">
+            <div>
+                <span class="emp-text">
+                    EMPLOYEE
+                </span> 
+                <br>
+                <sapn class="emp-text emp-payroll">PAYROLL</sapn>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count"></div>
+            </div>
+            <div id="searchbar">
+                <input type="text" id="search-input">
+            <img src="../assets/search-interface-symbol.png" alt="" id="search-button">
+        </div>
+        <span>
+            <a href="./EmpPayrollRegister.html" class="add-button">
+                <img src="../assets/plus.png" id="addUser"> Add User
+            </a>
+        </span>
+        </div>  
+
+        <table id="display" class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td class="emp-info">
+                        <!-- <img  alt="Employee" class="emp-img" /> -->
+                        <spna></spna>
+                    </td>
+                    <td></td>
+                    <td>
+                        <!-- <span class="dept-label"></span>
+                        <span class="dept-label"></span>
+                        <span class="dept-label"></span> -->
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td class="action-buttons">
+                        <!-- <button class="action-btn"><img src="../assets/delete.png" alt="Delete"/></button>
+                        <button class="action-btn"><img src="../assets//pencil.png" alt="Edit"/></button> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html> 
+
+
+
+
