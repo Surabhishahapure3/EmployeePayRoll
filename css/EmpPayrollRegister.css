@@ -1,0 +1,319 @@
+body {
+    height: 100%;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0px;
+  }
+  
+  .header {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    background-color: #ffffff;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 0px solid green;
+    margin-left: 0px;
+  }
+  
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    margin-left: 42px;
+  }
+  
+  .logo-content-img {
+    border: 0px solid #42515f;
+  }
+  
+  .emp-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+  }
+  
+  .emp-payroll {
+    color: #42515f;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .form-content {
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  }
+  
+  .form {
+    width: 65%;
+    padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  
+  .form-head {
+    font: normal normal bold 24px/37px Robot;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
+  
+  .row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+  }
+  
+  .label {
+    min-width: 140px;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Robot;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  #salary{
+    width: 39%;
+  }
+  .error-message{
+    color: red;
+    display: block;
+    margin-left: 134px;
+  }
+  
+  .profile-radio-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .profile-radio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+  } 
+  
+  
+  .submit-reset{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+  }
+  
+  .buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+  }
+  
+  .submitButton {
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+  }
+  
+  .resetButton {
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .cancelButton {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+  }
+
+  #profileError{
+    color: red;
+    display: block;
+    margin-left: 137px;
+  }
+
+  #genderError{
+    color: red;
+    display: block;
+    margin-left: 137px;
+    margin-top: -21px;
+  }
+
+  #deptError{
+    color: red;
+    display: block;
+    margin-left: 137px;
+    margin-top: -21px;  
+  }
+
+  #salaryError{
+    color: red;
+    display: block;
+    margin-left: 137px;
+    margin-top: -3px;
+  }
+
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo-content {
+      margin-left: 0;
+    }
+  
+    .form {
+      width: 90%;
+      padding: 20px;
+    }
+   
+    .row-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .label {
+      min-width: 100%;
+      padding-bottom: 5px;
+    }
+  
+    .input {
+      width: 100%;
+    }
+  
+    .submit-reset {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #resetButton{
+      margin-top: 23px;
+    margin-right: 22px;
+    }
+
+    #cancelBtn{
+      width: 70px;
+    height: 46px;
+    }
+  }
+
+
+  @media (min-width: 601px) and (max-width: 992px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .header-content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .logo-content {
+      margin-left: 20px;
+    }
+  
+    .form {
+      width: 92%;
+      padding: 30px;
+    }
+  
+    .row-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .label {
+      min-width: 120px;
+    }
+  
+    .input {
+      width: calc(100% - 130px);
+    }
+  
+    .submit-reset {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    /* #formreg{
+      width: 694px;
+    } */
+  }
+  
+  
+  
